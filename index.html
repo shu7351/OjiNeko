@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>オジモバ</title>
+        <link href="pokoStyle.css" rel="stylesheet">
+    </head>
+    <body>
+        <input type="checkbox" id="popup">
+            <!-- ポップアップ部分 -->
+    <div id="overlay">
+        <label for="popup" id="bg_gray"></label> <!-- ウィンドウの外のグレーの領域 -->
+
+        <div id="window"> <!-- ウィンドウ部分 -->
+            <label for="popup" id="btn_cloth"> <!-- 閉じるボタン -->
+                <span></span>
+            </label>
+            <div id="msg"> <!-- ウィンドウのコンテンツ -->
+                <h1 style="color: white; font-size: 160%;">棒人間を操作してねこをすくえ。</h1>
+                <h1 style="color: white; font-size: 160%;">ただし、おじさんにはみつかるな。</h1>
+
+                <h3 style="color: white; font-size: 120%; text-align: center;" >移動：画面タップ</h3>
+            </div>
+        </div>
+    </div>
+
+        <p><div style="text-align: center;"><img class="title" src = "title.png"></div></p>
+        <p><div style="text-align: center;"><img class="pokotop" src = "hurimuki.png"></div></p>
+        <div class="btn">
+            <div class="btn1">
+                <a href="gamemain.html" style="color: white; font-size: 160%;">あそぶ</a>
+            </div>
+        </div>
+        <div class="btn">
+            <div class="btn1">
+                <p><label for="popup" id="txt_label" style="color: white; font-size: 160%;">あそびかた</label></p>
+                
+            </div>
+        </div>
+        <script>
+            localStorage.clear();
+            localStorage.setItem('playcount', 1);
+            localStorage.setItem('maxpoint', 0);
+        </script>
+    </body>
+</html>
